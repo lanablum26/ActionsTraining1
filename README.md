@@ -1,5 +1,5 @@
 # GitHub Actions Fundamentals
-
+Lana's Training #1
 Repo for the `GitHub Actions Fundamentals` training.
 
 ## 👉 Objectives
