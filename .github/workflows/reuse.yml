@@ -2,7 +2,15 @@ name: Reuse other workflow
 
 on: [workflow_dispatch]
 jobs:
-  name: call-workflow
-    on ./.github
+  call-workflow:
+    uses: ./.github/workflows/reusable.yml
+    with: 
+      who-to-greet: '@lanablum'
+  use-output:
+    runs-on: ubunto-latest
+    needs: [call-workflow]
+    steps:
+      - run: echo "Time was ${{ needs.call-workflow.output.current-time }}"
+    
   
   
