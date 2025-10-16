@@ -1,3 +1,4 @@
+name: Git Hub Actions Demo
 on:
   push:
     branches: [ main ]
